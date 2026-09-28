@@ -1,23 +1,75 @@
 aid: benefitbay
+
 name: BenefitBay
-description: 'BenefitBay is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'BenefitBay provides an ICHRA administration platform that connects brokers, employers, employees, and carriers in a unified ecosystem. It offers real-time plan modeling, compliance tools, and direct premium payments, aiming to simplify individual health reimbursement arrangements and improve employee satisfaction across the United States.'
+
 url: https://raw.githubusercontent.com/api-evangelist/benefitbay/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- ICHRA
+- Benefits
+- HealthTech
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/benefitbay-hosts.yml
+- type: Vendors
+  url: vendors/benefitbay-vendors.yml
+- type: Leadership
+  url: https://www.benefitbay.com/team
+- type: GitHubOrganization
+  url: https://github.com/benefitbay
+- type: DomainSecurity
+  url: security/benefitbay-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/benefitbay_stock/
+  url: https://www.benefitbay.com
+
+- type: About
+  url: https://www.benefitbay.com/about
+- type: Contact
+  url: https://www.benefitbay.com/contact-us
+- type: TermsOfService
+  url: https://app.benefitbay.com/home/terms_of_service
+- type: PrivacyPolicy
+  url: https://app.benefitbay.com/home/privacy_policy
+- type: ICHRA-Guide
+  url: https://www.benefitbay.com/ichra-guide?hsLang=en
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL contracts were found on any discovered host.
+  evidence:
+    - url: https://api.benefitbay.com/openapi.json
+      status: 0
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

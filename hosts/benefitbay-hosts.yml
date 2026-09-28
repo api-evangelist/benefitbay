@@ -1,0 +1,78 @@
+generated: '2026-09-27'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 4
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - legal
+  - other
+  - source
+  - website
+hosts:
+- host: api.benefitbay.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: benefitbay.com
+  role: api
+  relation: own
+- host: app.benefitbay.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: benefitbay.com
+  role: legal
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: info.benefitbay.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: benefitbay.com
+  role: other
+  relation: own
+- host: www.benefitbay.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Leadership
+  - Website
+  - About
+  - Contact
+  - ICHRA-Guide
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: benefitbay.com
+  role: website
+  relation: own

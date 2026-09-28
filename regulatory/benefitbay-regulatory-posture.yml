@@ -1,0 +1,31 @@
+generated: "2026-09-28"
+method: probed
+source: "https://app.benefitbay.com/home/privacy_policy"
+signals:
+  data_subject_request:
+    evidence:
+      - source: "privacy_policy"
+        http_status: 200
+        fetched: "/tmp/privacy.html"
+        url: "https://app.benefitbay.com/home/privacy_policy"
+        section: "Access and Deletion Rights"
+        quote: "You have the right to request that Benefitbay, Inc. disclose certain information to you about our collection and use of your personal information over the past 12 months."
+        note: "Provides data subject access request right."
+  deletion_rights:
+    evidence:
+      - source: "privacy_policy"
+        http_status: 200
+        fetched: "/tmp/privacy.html"
+        url: "https://app.benefitbay.com/home/privacy_policy"
+        section: "Deletion Request Rights"
+        quote: "You have the right to request that Benefitbay, Inc. delete any of your personal information that we collected from you and retained, subject to certain exceptions."
+        note: "Provides data subject deletion right with listed exceptions."
+  incident_notification:
+    evidence:
+      - source: "privacy_policy"
+        http_status: 200
+        fetched: "/tmp/privacy.html"
+        url: "https://app.benefitbay.com/home/privacy_policy"
+        section: "Deletion Request Rights"
+        quote: "We may deny your deletion request if retaining the information is necessary to detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities."
+        note: "Indicates incident detection as a reason to retain data, implying incident notification obligations."
