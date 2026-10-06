@@ -17,7 +17,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-27'
 
-modified: '2026-09-27'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -41,6 +41,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.benefitbay.com/medicare-ichra
+  type: Blog
+- url: https://www.benefitbay.com/medicare-ichra/rss.xml
+  type: BlogRSS
 - type: Hosts
   url: hosts/benefitbay-hosts.yml
 - type: Vendors
