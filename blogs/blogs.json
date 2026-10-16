@@ -1,0 +1,21 @@
+{
+  "repo": "benefitbay",
+  "feeds": [
+    {
+      "source": "https://www.benefitbay.com/medicare-ichra",
+      "feed_url": "https://www.benefitbay.com/medicare-ichra/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.benefitbay.com/medicare-ichra/rss.xml",
+      "feed_url": "https://www.benefitbay.com/medicare-ichra/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-10-10T13:15:00Z"
+}
